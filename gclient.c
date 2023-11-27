@@ -36,6 +36,7 @@ int main(int argc, char *argv[]) {
         fgets(line, MAXLEN, clientfp); //get rid of \n
 
         FILE *serverfp = fopen(serverfifo, "w");
+        
         char word[] = "(Guess)";
         char secWord[] = "The";
         while (1) {
